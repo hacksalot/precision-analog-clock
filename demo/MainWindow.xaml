@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:clock="clr-namespace:OCDClock;assembly=ocd-clock-control-wpf"
+        xmlns:Options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options" x:Class="OCDClockDemo.MainWindow"
+        Title="OCD Clock Demo" Height="350" Width="525">
+	<Grid Background="#232323">
+		<Viewbox>
+			<Border BorderThickness="1">
+                
+                <!-- Load the clock control. Try changing the style to "ClockStyleBare", 
+                "ClockStyleOffice" or "ClockStyleSpecialOps". Set IsDiscrete to false
+                to get continuous motion. To force the clock to display a particular 
+                time, set the IsRunning property to false and the DateTime property 
+                to whatever time you want the clock to show. -->
+                <clock:ClockControl IsDiscrete="True" IsRunning="True" Style="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type clock:ClockControl}, ResourceId=ClockStyleSpecialOps}}" />
+                
+			</Border>
+		</Viewbox>
+	</Grid>
+</Window>

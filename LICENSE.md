@@ -1,0 +1,1 @@
+Copyright (c) 2014 James M. Devlin | All Rights Reserved
